@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => '34.66.21.123',
+	'username' => 'mccdb',
+	'password' => 'mccdb',
 	'database' => 'ci_adminlte',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

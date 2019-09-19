@@ -15,6 +15,8 @@ class Auth extends MY_Controller {
 
 	function index()
 	{
+	#	    $this->ion_auth->register('root', 'root', 'root@root.com', array( 'first_name' => 'Robert', 'last_name' => 'Roberts' ), array('1') );
+
         if ( ! $this->ion_auth->logged_in())
         {
             redirect('auth/login', 'refresh');
