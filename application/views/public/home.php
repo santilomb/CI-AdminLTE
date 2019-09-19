@@ -33,7 +33,7 @@ header('Vary: Accept-Encoding');
     </head>
     <body>
         <article>
-            <h1>HOME</h1>
+            <h1>HOME modificado</h1>
 <?php if ($admin_link): ?>
             <p><a href="<?php echo site_url('admin'); ?>">Admin</a></p>
 <?php endif; ?>
