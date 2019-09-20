@@ -133,7 +133,7 @@ class Public_Controller extends MY_Controller
             /* Load library function  */
             //$this->breadcrumbs->unshift(0, $this->lang->line('menu_dashboard'), 'admin/dashboard');
 
-            $this->load->view('admin/header');
+            $this->load->template('admin/header');
 
             /* Data */
             //$this->data['title'] = $this->config->item('title');
@@ -154,7 +154,7 @@ class Public_Controller extends MY_Controller
             }
 
 
-            $this->load->view('admin/header');
+            $this->load->template('admin/footer');
             /* ******************************************
             * Fin Carga
             ****************************************** */ 
