@@ -133,6 +133,8 @@ class Public_Controller extends MY_Controller
             /* Load library function  */
             //$this->breadcrumbs->unshift(0, $this->lang->line('menu_dashboard'), 'admin/dashboard');
 
+            $this->load->view('admin/header');
+
             /* Data */
             //$this->data['title'] = $this->config->item('title');
             //$this->data['title_lg'] = $this->config->item('title_lg');
@@ -151,6 +153,8 @@ class Public_Controller extends MY_Controller
                 $this->data['header_alert_file_install'] = NULL; /* << A MODIFIER !!! */
             }
 
+
+            $this->load->view('admin/header');
             /* ******************************************
             * Fin Carga
             ****************************************** */ 
