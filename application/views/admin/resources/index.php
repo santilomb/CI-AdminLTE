@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                                 <div class="box-body">
 
-
+                                <div class="box box-primary">Guarda con esto...</div>
 
                                 </div>
                             </div>
