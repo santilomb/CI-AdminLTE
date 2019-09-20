@@ -1,4 +1,4 @@
-
+<?php $this->view('admin/_templates/header'); ?>
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -49,3 +49,4 @@
         <!-- /.content -->
     </div>
 
+<?php $this->view('admin/_templates/footer'); ?>
