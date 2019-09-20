@@ -1,5 +1,3 @@
-<?php $this->load->view('admin/_template//header'); ?>
-
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -50,4 +48,3 @@
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-<?php $this->load->view('admin/_template/footer'); ?>
