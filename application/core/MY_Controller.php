@@ -119,6 +119,7 @@ class Public_Controller extends MY_Controller
         if ($this->ion_auth->logged_in())
         {
             $this->data['logout_link'] = TRUE;
+        }
         else
         {
             $this->data['logout_link'] = FALSE;
