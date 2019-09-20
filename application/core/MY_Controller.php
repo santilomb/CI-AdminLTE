@@ -131,13 +131,13 @@ class Public_Controller extends MY_Controller
             $this->lang->load(['admin/main_header', 'admin/main_sidebar', 'admin/footer', 'admin/actions']);
 
             /* Load library function  */
-            $this->breadcrumbs->unshift(0, $this->lang->line('menu_dashboard'), 'admin/dashboard');
+            //$this->breadcrumbs->unshift(0, $this->lang->line('menu_dashboard'), 'admin/dashboard');
 
             /* Data */
-            $this->data['title'] = $this->config->item('title');
-            $this->data['title_lg'] = $this->config->item('title_lg');
-            $this->data['title_mini'] = $this->config->item('title_mini');
-            $this->data['admin_prefs'] = $this->prefs_model->admin_prefs();
+            //$this->data['title'] = $this->config->item('title');
+            //$this->data['title_lg'] = $this->config->item('title_lg');
+            //$this->data['title_mini'] = $this->config->item('title_mini');
+            //$this->data['admin_prefs'] = $this->prefs_model->admin_prefs();
             $this->data['user_login'] = $this->prefs_model->user_info_login($this->ion_auth->user()->row()->id);
 
             if ($this->router->fetch_class() == 'dashboard')
