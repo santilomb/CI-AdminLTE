@@ -8,7 +8,7 @@ class Resources extends Admin_Controller {
         parent::__construct();
 
         $this->load->library('grocery_CRUD');
-        
+
         /* Title Page :: Common */
         $this->page_title->push(lang('menu_resources'));
         $this->data['pagetitle'] = $this->page_title->show();
