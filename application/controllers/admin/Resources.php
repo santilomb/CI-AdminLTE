@@ -27,6 +27,12 @@ class Resources extends Admin_Controller {
             /* Breadcrumbs */
             $this->data['breadcrumb'] = $this->breadcrumbs->show();
 
+            /* TABLA */
+            $crud = new grocery_CRUD();
+            $crud->set_table('localidades');
+            $crud->set_subject('Localidades');
+            $this->data['localidades'] = $crud->render();
+
             /* Load Template */
             $this->template->admin_render('admin/resources/index', $this->data);
         }
