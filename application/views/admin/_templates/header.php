@@ -49,19 +49,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <![endif]-->
 <?php endif; ?>
 
-<?php
-if ($crudVars == TRUE):  
-
-    foreach($crudVars->css_files as $file): ?>
-        <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
-    <?php endforeach; ?>
-    <?php foreach($crudVars->js_files as $file): ?>
-        <script src="<?php echo $file; ?>"></script>
-    <?php endforeach; 
-
-endif;?>
-
-
     </head>
     <body class="hold-transition skin-blue fixed sidebar-mini">
 <?php if ($mobile === FALSE && $admin_prefs['transition_page'] == TRUE): ?>
