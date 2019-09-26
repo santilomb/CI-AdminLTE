@@ -7,10 +7,9 @@ class Resources extends Admin_Controller {
     {
         parent::__construct();
 
-        $this->load->database();
-        $this->load->helper('url');
-
-        $this->load->library('grocery_CRUD');
+        //$this->load->database();
+        //$this->load->helper('url');
+        //$this->load->library('grocery_CRUD');
 
         /* Title Page :: Common */
         $this->page_title->push(lang('menu_resources'));
@@ -32,13 +31,13 @@ class Resources extends Admin_Controller {
             /* Breadcrumbs */
             $this->data['breadcrumb'] = $this->breadcrumbs->show();
 
-            /* TABLA */
+            /* TABLA 
             $crud = new grocery_CRUD();
             $crud->set_table('localidades');
             $crud->set_subject('Localidades');
             //$this->data['crudVars'] = $crud->render();
             $output = $crud->render();
-
+*/
             /* Load Template */
             $this->template->admin_render('admin/resources/index', $this->data);
         }
