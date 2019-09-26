@@ -17,9 +17,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <h3 class="box-title">Default Box Example</h3>
                                 </div>
                                 <div class="box-body">
-                                    <div>
-                                    <?php //var_dump($localidades); ?>
-                                    </div>
                                 </div>
                             </div>
                          </div>
