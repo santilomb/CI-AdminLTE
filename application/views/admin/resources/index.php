@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                                 <div class="box-body">
                                     <div>
-                                    <?php echo $localidades->output; ?>
+                                    <?php var_dump($localidades); ?>
                                     </div>
                                 </div>
                             </div>
