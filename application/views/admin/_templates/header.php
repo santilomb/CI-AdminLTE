@@ -59,7 +59,7 @@ if ($crudVars == TRUE):
         <script src="<?php echo $file; ?>"></script>
     <?php endforeach; 
 
-end if;?>
+endif;?>
 
 
     </head>
