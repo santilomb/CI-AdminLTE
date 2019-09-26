@@ -34,6 +34,9 @@ class Resources extends Admin_Controller {
             $crud->set_subject('Localidades');
             //$this->data['localidades'] = $crud->render();
 
+            $this->load->helper('dump');
+            dump($crud->render());
+
             /* Load Template */
             $this->template->admin_render('admin/resources/index', $this->data);
         }
