@@ -48,6 +48,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <script src="<?php echo base_url($plugins_dir . '/respond/respond.min.js'); ?>"></script>
         <![endif]-->
 <?php endif; ?>
+
+<?php
+if ($crudVars == TRUE):  
+
+    foreach($crudVars->css_files as $file): ?>
+        <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
+    <?php endforeach; ?>
+    <?php foreach($crudVars->js_files as $file): ?>
+        <script src="<?php echo $file; ?>"></script>
+    <?php endforeach; 
+
+end if;?>
+
+
     </head>
     <body class="hold-transition skin-blue fixed sidebar-mini">
 <?php if ($mobile === FALSE && $admin_prefs['transition_page'] == TRUE): ?>
